@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery Page</title>
+
+    {% load static %}
+
+
+
+
+    <style>
+        h1{text-align: center;
+            background-color: gold;
+            color:black;
+            line-height:80px;
+        }
+
+        img{
+            width: 280px;
+            height: 250px;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+<a href="{% url 'about' %}">about</a>
+<a href="{% url 'home' %}">home</a>
+<h1>My Gallery</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores consequatur cumque deserunt eaque odio porro voluptas. At commodi eligendi explicabo hic, pariatur repellendus similique? Consequuntur eligendi facere nam officia voluptatibus.</span><span>Animi beatae blanditiis consequatur facilis neque perspiciatis repellendus unde. A, asperiores aut blanditiis culpa distinctio eum explicabo impedit nam, natus numquam odio quasi reiciendis sint suscipit vitae. Cum eligendi, saepe?</span></p>
+<img src="{% static 'assets/img.png' %}" alt="">
+<img src="{% static 'assets/img_2.png' %}" alt="">
+<img src="{% static 'assets/img_3.png' %}" alt="">
+<img src="{% static 'assets/img_4.png' %}" alt="">
+<img src="{% static 'assets/img_5.png' %}" alt="">
+
+
+
+</body>
+</html>

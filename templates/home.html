@@ -6,12 +6,42 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
+
+    {% load static %}
+
+<link rel="stylesheet" href=" {% static 'index.css' %}">
+
+
+    <style>
+        h1{text-align: center;
+        background-color: black;
+        color: white;
+        line-height: 80px;}
+        h1:hover{ background-color:lightpink}
+
+    </style>
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
+<a href="{% url 'about' %}">about</a>
+<a href="{% url 'gallery' %}">gallery</a>
 <h1>Quickdash App</h1>
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi atque debitis dicta dolorum ducimus excepturi ipsum itaque laborum maxime nisi officiis pariatur quam ratione, repellat rerum saepe suscipit velit vero!</span><span>Assumenda delectus dolorum laborum molestias nam optio provident quisquam veniam. Accusamus, asperiores at commodi cumque distinctio, ea eaque in labore numquam obcaecati omnis optio quisquam quod sunt tempora tenetur velit.</span></p>
 <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus est eum ex harum id iste magnam maiores minus nobis, nulla provident, quia sequi sit tempora, vel? Eos ex obcaecati omnis.</span><span>Accusantium assumenda atque, dolorem eaque eius enim est excepturi fugit harum maxime minima modi molestiae, nesciunt nihil non odio officia pariatur possimus quod quos, repellendus repudiandae sit suscipit veniam veritatis.</span><span>Aliquam asperiores, dolores ea eligendi necessitatibus nobis perferendis perspiciatis repellendus temporibus unde. Eaque incidunt natus neque non quae ullam ut vero. Animi harum iure laboriosam, mollitia temporibus vel velit voluptates?</span></p>
-
+<img src="{% static 'assets/img_2.png' %}" alt="">
+<img src="{% static 'assets/img.png' %}" alt="">
+<img src="{% static 'assets/img_3.png' %}" alt="">
+<img src="{% static 'assets/img_4.png' %}" alt="">
+<img src="{% static 'assets/img_5.png' %}" alt="">
 
 
 </body>
